@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+	margin: none;
+	padding: none;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 2vmax;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	height: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;	
+}
+
+body{
+	margin: 0%;
+	padding: 0%;
+	background-color: rgb(226, 226, 226);
+	overflow-x: hidden;
+}
+/* Navigation bar */
+
+.logo-name{
+	padding: none;
+	color: rgb(226, 226, 226);
+	margin-left: 4vw;
+	margin-top: none;
+	font-size: 2.5vh;
+	animation: fadein 2s forwards 0s ease;
+}
+
+nav.nav-bar{
+	padding: none;
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+}
+.nav-menu{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	margin-top: 1vh;
+	margin-left: 40%;
+	animation: fadein 2s forwards 0s ease;
+	margin-right: 4vw;
+	
+}
+.nav-menu a{
+	color: rgb(226, 226, 226);
+	cursor: pointer;
+}
+
+.nav-menu li{
+	display: flex;
+	margin-left: 0.5vw;
+	font-size: 1vw;
+	margin-top: 3vh;
+	
+}
+
+.nav-menu a::after{
+	content: '';
+	display: block;
+	height: 0.2vh;
+	position: relative;
+	width: 0%;
+	background-color: rgb(226, 226, 226);
+	transition: ease 250ms;
+	
+}
+.nav-menu a:hover::after{
+	width: 100%;
+}
+
+/* end navigation bar */
+
+
+/* hero page */
+#hero{
+	margin: 0%;
+	padding: 0%;
+	background-image: url(./images/page1background.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+
+.cta {
+	position: relative;
+	margin-left: 40%;
+	border: rgb(226, 226, 226) solid 0.05rem;
+	padding: 0.3rem 0.3rem;
+	font-size: 1vw;
+	text-decoration: none;
+	color: rgb(226, 226, 226);
+	transition: ease 500ms;
+}
+
+.cta:hover{
+	color : black;
+	background-color: rgb(226, 226, 226);
+	pointer-events: painted;
+}
+
+
+.hero_quate{
+	color: rgb(226, 226, 226);
+	animation: fadein 2s forwards 0s ease;
+	margin-top: 13%;
+	margin-bottom: 30%;
+}
+
+.hero_quate h1{
+	text-transform: uppercase;
+	font-size: 6vw;
+
+}
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+/* End hero page */
+
+/* Interplanetary-page */
+#interplanetary-page {
+	margin: none;
+	padding: none;
+	background-image: url(./images/spacex--p-KCm6xB9I-unsplash.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.container2{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.container2 .section-context .section-title{
+	margin-top: 50%;
+	margin-bottom: 30%;
+	margin-left: 4vw;
+}
+
+.container2 .section-context .section-title h1{
+	font-size: 2.5vw;
+	
+} 
+.container2 .section-context .section-title p{
+	font-size: 1vw;
+}
+
+.container2 .section-context .section-title a{
+	position: relative;
+	margin-top: 2vh;
+	border: rgb(0, 0, 0) solid 0.05rem;
+	padding: 0.3rem 0.3rem;
+	font-size: 1.2vw;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	transition: ease 500ms;
+}
+
+.container2 .section-context .section-title a:hover{
+	color: rgb(226, 226, 226);
+	background-color: black;
+	cursor: pointer;
+}
+/* End of interplanetary-page */
+
+/* Contact us page */
+#contact-us-page{
+	background-size: 100vh;
+	padding: none;
+	margin: none;
+	background-image:  url(./images/spacex-tKs_2sBoqAg-unsplash.jpeg);
+	background-position: top center;
+	background-size: cover;
+	position: relative;
+	
+}
+.container3{
+	min-height: 2vh;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: baseline;
+	margin-left: 4vw;
+	/* backdrop-filter: blur(7px); */
+}
+.container3 .content{
+	justify-content: center;
+	margin-top: 50vh;
+	height: 100vh;
+	backdrop-filter: blur(2px);
+	position: relative;
+}
+.container3 .content .section-title{
+	font-size: 4vw;
+	text-transform: uppercase;
+}
+.container3 .content .contact-form .name, .email, .subject, .message, .form-control-submit{
+	margin-top: 10px;
+	width: 40vw;
+	background-color: transparent;
+	border: none;
+	border: 1px solid rgb(42, 41, 41);
+	border-radius: 3px;
+}
+.container3 .content .contact-form input::placeholder {
+	color: rgb(42, 41, 41);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+}
+.container3 .content .contact-form .message::placeholder{
+	color: rgb(42, 41, 41);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+}
+.container3 .content .contact-form .form-control-submit{
+	color: rgb(226, 226, 226);
+	border: 0.5px solid rgb(42, 41, 41);
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+.container3 .content .contact-form .form-control-submit:hover{
+	cursor: pointer;
+	background-color: rgb(226, 226, 226);
+	color:black;
+	transition: ease 500ms;
+}
+
+.container3 .content .contact-form .message{
+	font-display: 'Montserrat', sans-serif ;
+	height: 300px;
+}
+
+/* End of Contact us page */
+/* footer */
+#footer .container4 {
+	margin: none;
+	padding: none;
+	background-color: rgb(226, 226, 226);
+}
+.container4 ul{
+	display: flex;
+	justify-content: center;
+}
+
+.container4 li{
+	text-transform: uppercase;
+	display: flex;
+	font-size: 1vw;
+	width: 10vw;
+	
+}
+.container4 a{
+	color: black;
+}
+
+/* End of footer */
+
+
+/* keyframes start */
+@keyframes fadein{
+	0%{
+		transform: rotate(0) translateY(15%);
+		opacity: 0;
+	}
+	100%{
+		transform: rotate(0) translateY(0);
+		opacity: 1;
+	}
+}
+
+/* keyframes ens */
+
